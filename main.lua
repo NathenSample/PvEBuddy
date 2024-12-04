@@ -7,6 +7,8 @@ local pve_buddy_addon = {
   desc = "PvE Tracking tools"
 }
 -- TODO: Convert to snake_case_rocks
+-- TODO: Convert booleans to is_
+-- https://github.com/luarocks/lua-style-guide
 local DEBUG_LOGGING = false
 local STARTING_TIMER = -1;
 local MS_SINCE_LABOR_USED = 1000
