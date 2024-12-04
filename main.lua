@@ -51,7 +51,7 @@ local function calledOnExpChange(unitId, expAmount, expString)
     end
     KILL_COUNT = KILL_COUNT + 1
     local runtime = api.Time:GetUiMsec() - STARTING_TIMER;
-    local logMessage = "Current kill count: " .. KILL_COUNT .. " runTime: " .. runtime
+    local logMessage = "Current kill count: " .. KILL_COUNT
     if runtime > 0 then
       local runtime_in_hours = runtime / (1000 * 60 * 60)
       logMessage = logMessage .. " killsPerHour: " .. (KILL_COUNT / runtime_in_hours)
