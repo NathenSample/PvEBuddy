@@ -6,6 +6,7 @@ local pve_buddy_addon = {
   author = "Silverbranch",
   desc = "PvE Tracking tools"
 }
+-- TODO: Convert to snake_case_rocks
 local DEBUG_LOGGING = false
 local STARTING_TIMER = -1;
 local MS_SINCE_LABOR_USED = 1000
