@@ -131,7 +131,7 @@ local function printLoot()
   local hours, minutes, seconds = msToHoursMinutesSeconds(api.Time:GetUiMsec() - STARTING_TIMER)
   lazyLogging("Displaying loot log from a total of: " .. KILL_COUNT .. " kills, made over " .. hours .. " Hours, " .. minutes .. "Minutes, " .. seconds .. " Seconds.")
   for key, value in pairs(LOOT_LOG) do
-    lazyLogging(string.format("Name: %s Quantity: %d DropPct: %d", value.itemLinkText, value.itemCount, (value.itemCount/KILL_COUNT * 100)))
+    lazyLogging(string.format("Name: %s Quantity: %d DropPct: %.2f", value.itemLinkText, value.itemCount, (value.itemCount/KILL_COUNT * 100)))
   end
 end
 
