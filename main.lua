@@ -54,7 +54,7 @@ local function calledOnExpChange(unitId, expAmount, expString)
     local logMessage = "Current kill count: " .. KILL_COUNT
     if runtime > 0 then
       local runtime_in_hours = runtime / (1000 * 60 * 60)
-      logMessage = logMessage .. " killsPerHour: " .. (KILL_COUNT / runtime_in_hours)
+      logMessage = string.format(logMessage .. " killsPerHour: %d", (KILL_COUNT / runtime_in_hours))
     end
     lazyLogging(logMessage)
   else
